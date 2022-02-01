@@ -1,0 +1,45 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: silver;
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.card-report-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.card-report-section {
+    display: grid;
+    height: 300px;
+    grid-template: repeat(2,1fr) / repeat(2,1fr);
+    gap: 20px 5px;
+}
+.card-report {
+    background-color: darkslategray;
+    padding: 30px;
+    border-radius: 28px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-report .card-report-header {
+    flex-basis: fit-content;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.card-report .card-report-body {
+    flex-basis: 100%;
+    margin-top: 20px;  
+}
+.card-report .card-report-body p {
+    margin: 0;    
+} 
+.card-report .card-report-footer {
+    flex-basis: 100%;
+    align-self: flex-end;
+    text-align: end;
+    font-size: 24px;
+}
